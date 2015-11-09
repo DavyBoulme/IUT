@@ -1,5 +1,11 @@
 package edu.iut.app;
 
-public interface IApplicationLogListener {
-	/** TP1 : CrÃ©er la fuonction newMessage */
+//Interface IApplicationLogListener
+public interface IApplicationLogListener
+{
+	// TP1 : Créer la fonction newMessage 
+	
+	//Méthode newMessage( level, message)
+	//level correspond à un niveau (Warning, Error, )
+	void newMessage(String level, String message);
 }

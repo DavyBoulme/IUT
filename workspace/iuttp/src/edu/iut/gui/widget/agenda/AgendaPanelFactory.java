@@ -9,7 +9,8 @@ import javax.swing.JPanel;
 
 import edu.iut.gui.widget.agenda.WeekPanel.WeekDayNames;
 
-public class AgendaPanelFactory {
+public class AgendaPanelFactory 
+{
 
 	public enum ActiveView{
 		MONTH_VIEW("Month View"),

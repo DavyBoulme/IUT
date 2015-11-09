@@ -3,26 +3,56 @@ package edu.iut.app;
 import java.util.ArrayList;
 
 
-public class ApplicationLogs extends ArrayList<IApplicationLog> {
+public class ApplicationLogs extends ArrayList<IApplicationLog>
+{
 
-	public ApplicationLogs() {		
+	public ApplicationLogs()
+	{		
+		super();
 	}
 	
-	public ArrayList<IApplicationLog> getErrors() {
+	
+	//___________________________EXERCICE 2_______________________________________
+	public ArrayList<IApplicationLog> getErrors() 
+	{
 		ArrayList<IApplicationLog> filteredLogs = new ArrayList<IApplicationLog>();
-		// une boucle Ã  faire ici, penser Ã  utiliser instanceof
+		// une boucle à faire ici, penser à utiliser instanceof
+		for(IApplicationLog i : this)
+		{
+			if(i instanceof ApplicationErrorLog)
+				filteredLogs.add(i);
+		}
 		return filteredLogs;
 	}
-	public ArrayList<IApplicationLog> getWarnings() {
+	
+	
+	public ArrayList<IApplicationLog> getWarnings()
+	{
 		ArrayList<IApplicationLog> filteredLogs = new ArrayList<IApplicationLog>();
-		// une boucle Ã  faire ici, penser Ã  utiliser instanceof
+		// une boucle à faire ici, penser à utiliser instanceof
+		for(IApplicationLog i : this)
+		{
+			if(i instanceof ApplicationWarningLog)
+				filteredLogs.add(i);
+		}
+
 		return filteredLogs;
 	}
-	public ArrayList<IApplicationLog> getInfos() {
+	
+	
+	public ArrayList<IApplicationLog> getInfos()
+	{
 		ArrayList<IApplicationLog> filteredLogs = new ArrayList<IApplicationLog>();
-		// une boucle Ã  faire ici, penser Ã  utiliser instanceof
+		// une boucle à faire ici, penser à utiliser instanceof
+		
+		for(IApplicationLog i : this)
+		{
+			if(i instanceof ApplicationInfoLog )
+				filteredLogs.add(i);		
+		}
 		return filteredLogs;
 	}
 	
 
 }
+

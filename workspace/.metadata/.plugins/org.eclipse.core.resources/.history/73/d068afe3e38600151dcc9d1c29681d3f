@@ -1,0 +1,33 @@
+package edu.iut.app;
+
+public class ApplicationErrorLog extends AbstractApplicationLog {
+
+	/** Ajouter un tableau ou profiter de l'héritage ? */
+	// pas d'ajout de t'ableau car celui-ci est present dans la classe mere
+	// et est accesible a toute les classes filles
+	
+	public ApplicationErrorLog() {
+		super();
+	}
+	
+	@Override
+	public void setMessage(String message) {
+		this.message = message;	// ici le message est conserver
+		super.fireMessage("[ERROR]", this.message);	// dans la methode fireMessage,
+													// le tableau de la classe est deja parcouru
+	}
+
+	@Override
+	public String getMessage() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public IApplicationLogListener[] getpplicationLogListeners() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+}

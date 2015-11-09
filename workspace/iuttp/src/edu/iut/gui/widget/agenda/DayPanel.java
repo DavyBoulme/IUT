@@ -9,15 +9,19 @@ import javax.swing.JPanel;
 import edu.iut.gui.widget.agenda.AgendaPanelFactory.ActiveView;
 import edu.iut.gui.widget.agenda.WeekPanel.WeekDayNames;
 
-public class DayPanel extends EventPanel {
+//CLASSE DayPanel
+public class DayPanel extends EventPanel
+{
 
 	public DayPanel(ActiveView activeView,WeekDayNames weekDayNames) {
 		super(activeView);
-		switch (activeView) {
+		switch (activeView) 
+		{
 		case DAY_VIEW:
 		case WEEK_VIEW:
 			GridLayout daysLayout;
-			switch(weekDayNames) {
+			switch(weekDayNames) 
+			{
 			case EMPTYDAY:
 				daysLayout = new GridLayout(24,1);
 				this.setLayout(daysLayout);
@@ -29,11 +33,13 @@ public class DayPanel extends EventPanel {
 			}
 			
 			
-			for (int hi = 0;hi<24;hi++) {
+			for (int hi = 0;hi<24;hi++) 
+			{
 				JPanel hour = new JPanel();
 				hour.add(new JLabel(new Integer(hi).toString()));
 				this.add(hour);
 			}
+			
 			break;
 		case MONTH_VIEW:
 			JPanel hour = new JPanel();

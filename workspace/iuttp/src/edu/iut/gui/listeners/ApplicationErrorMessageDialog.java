@@ -2,12 +2,19 @@ package edu.iut.gui.listeners;
 
 import javax.swing.JOptionPane;
 
-public class ApplicationErrorMessageDialog extends
-		AbstractApplicationMessageDialog {
+public class ApplicationErrorMessageDialog extends AbstractApplicationMessageDialog 
+{
+
+	protected void showMessage(String level, String message) {
+		/** UTILISER l'AIDE FOURNI DANS L'ENNONCE */
+		JOptionPane.showMessageDialog(null, "[Erreur]" + message);
+	}
 
 	@Override
-	protected void showMessage(String level, String message) {
-		/** UTILISER l'AIDE FORUNIR DANS L'ENNONCE */
+	protected void showMessage()
+	{
+		// TODO Auto-generated method stub
+		
 	}
 
 }
