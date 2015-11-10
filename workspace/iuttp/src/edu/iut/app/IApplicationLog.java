@@ -11,13 +11,9 @@ public interface IApplicationLog
 	*/
 	
 	//_________________Les méthodes_____________________________
-	
-	void setMessage(String message);
-	
-	void addListener(IApplicationLogListener listener); // methode d'ajout
-	
-	String getMessage();
-	
-	IApplicationLogListener[] getpplicationLogListeners(); // obtention du tableau
+	public void setMessage(String message);
+	public String getMessage();
+	public void addListener(IApplicationLogListener listener);
+	public IApplicationLogListener[] getApplicationLogListeners();
 	
 }

@@ -31,7 +31,9 @@ public class SchedulerFrame extends JFrame {
 		layerLayout.next(contentPane);
 	}
 	
-	public SchedulerFrame() {
+	//Constructer SchedulerFrame()
+	public SchedulerFrame() 
+	{
 		super();
 		addWindowListener (new WindowAdapter(){
 			public void windowClosing (WindowEvent e){
@@ -41,7 +43,10 @@ public class SchedulerFrame extends JFrame {
 		setupUI();
 
 	}
-	public SchedulerFrame(String title) {
+	
+	//Constructeur ScheduleurFrame(titre)
+	public SchedulerFrame(String title)
+	{
 		super(title);
 		addWindowListener (new WindowAdapter(){
 			public void windowClosing (WindowEvent e){

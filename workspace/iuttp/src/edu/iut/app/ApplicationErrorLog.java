@@ -1,6 +1,5 @@
 package edu.iut.app;
 
-import java.util.ArrayList;
 
 public class ApplicationErrorLog extends AbstractApplicationLog 
 {
@@ -24,27 +23,4 @@ public class ApplicationErrorLog extends AbstractApplicationLog
 		super.fireMessage("[ERROR]", this.message);	// dans la methode fireMessage,
 													// le tableau de la classe est deja parcouru
 	}
-
-	@Override
-	public String getMessage() 
-	{
-		// TODO Auto-generated method stub
-		return this.message;
-	}
-
-	@Override
-	public IApplicationLogListener[] getpplicationLogListeners()
-	{
-
-		int i = 0;
-		IApplicationLogListener[] tab = new IApplicationLogListener[this.listeners.size()];
-		for (IApplicationLogListener listener : this.listeners)
-		{
-			tab[i] = listener;
-			i++;
-		}
-		
-		return tab;
-	}
-
 }

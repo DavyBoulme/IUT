@@ -13,6 +13,8 @@ public class ApplicationLogs extends ArrayList<IApplicationLog>
 	
 	
 	//___________________________EXERCICE 2_______________________________________
+	
+	//Méthode getError() qui retourune une ArrayList de IApplicationLog
 	public ArrayList<IApplicationLog> getErrors() 
 	{
 		ArrayList<IApplicationLog> filteredLogs = new ArrayList<IApplicationLog>();
@@ -25,7 +27,7 @@ public class ApplicationLogs extends ArrayList<IApplicationLog>
 		return filteredLogs;
 	}
 	
-	
+	//Méthode getWarnings() qui retourune une ArrayList de IApplicationLog
 	public ArrayList<IApplicationLog> getWarnings()
 	{
 		ArrayList<IApplicationLog> filteredLogs = new ArrayList<IApplicationLog>();
@@ -40,6 +42,7 @@ public class ApplicationLogs extends ArrayList<IApplicationLog>
 	}
 	
 	
+	//Méthode getInfos() qui retourune une ArrayList de IApplicationLog
 	public ArrayList<IApplicationLog> getInfos()
 	{
 		ArrayList<IApplicationLog> filteredLogs = new ArrayList<IApplicationLog>();

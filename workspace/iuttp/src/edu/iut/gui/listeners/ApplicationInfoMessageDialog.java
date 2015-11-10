@@ -5,15 +5,11 @@ import javax.swing.JOptionPane;
 public class ApplicationInfoMessageDialog extends AbstractApplicationMessageDialog 
 {
 
-	protected void showMessage(String level, String message)
-	{
-		/** UTILISER l'AIDE FORUNIR DANS L'ENNONCE */
-		JOptionPane.showMessageDialog(null, "[Info]" + message);
-	}
 
 	@Override
-	protected void showMessage() {
+	//Méthode ShowMessage redéfinie
+	protected void showMessage(String level, String message) {
 		// TODO Auto-generated method stub
-		
+		JOptionPane.showMessageDialog(null, message, level, JOptionPane.INFORMATION_MESSAGE, null);
 	}
 }

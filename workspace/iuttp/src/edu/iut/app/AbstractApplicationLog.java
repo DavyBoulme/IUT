@@ -18,31 +18,35 @@ public abstract class AbstractApplicationLog implements IApplicationLog
 		listeners = new ArrayList<IApplicationLogListener>();
 	}
 	
+	//Méthode getMessage
+	public String getMessage()
+	{
+		return message;
+	}
+	
     /** TP1 : Fonction venant de l'interface par héritage */
+	//Méthode addListerner
 	public void addListener(IApplicationLogListener listener) 
 	{
 		this.listeners.add(listener);
 	}
 	
 	//Méthode getApplicationLogListener
-	protected IApplicationLogListener[] getApplicationLogListeners()
+	public IApplicationLogListener[] getApplicationLogListeners()
 	{
-		
 		int i = 0;
 		IApplicationLogListener[] tab = new IApplicationLogListener[this.listeners.size()];
 		for (IApplicationLogListener listener : this.listeners)
 		{
-			
 			tab[i] = listener;
-			i++;
-			
+			i++;	
 		}
-		
 		return tab;
 	}
 
 	
 	/** Listener action */
+	//Méthode fireMessage
 	protected void fireMessage(String level, String message)
 	{
 		for (IApplicationLogListener listener_i : listeners)

@@ -12,26 +12,31 @@ import edu.iut.gui.widget.agenda.WeekPanel.WeekDayNames;
 public class AgendaPanelFactory 
 {
 
-	public enum ActiveView{
+	public enum ActiveView
+	{
 		MONTH_VIEW("Month View"),
 		WEEK_VIEW("Week View"),
 		DAY_VIEW("Day View");
 		
 		private String activeView;
 		
-		ActiveView(String activeView) {
+		ActiveView(String activeView) 
+		{
 			this.activeView = activeView;
 		}
 		
-		public String toString() {
+		public String toString()
+		{
 			return activeView;
 		}		
 	}
 	
-	public AgendaPanelFactory() {
+	public AgendaPanelFactory()
+	{
 	}
 	
-	public JPanel getAgendaView(ActiveView activeView) {
+	public JPanel getAgendaView(ActiveView activeView) 
+	{
 		JPanel agendaView = null;
 		switch (activeView) {
 			case MONTH_VIEW:
