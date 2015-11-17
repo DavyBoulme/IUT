@@ -1,9 +1,0 @@
-package edu.iut.app;
-
-//Interface IApplicationLogListener
-public interface IApplicationLogListener
-{
-	// TP1 : Créer la fonction newMessage 
-	
-	void newMessage(String level, String message);
-}
