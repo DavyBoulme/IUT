@@ -2,6 +2,21 @@ package edu.iut.app;
 
 import java.util.ArrayList;
 
+
+/**
+ * <b>AbstractApplicationLog est la classe abstraite représentant les applicationlogs</b>
+ * <p>
+ * Un AbstractApplicationLog est caractérisé par les attributs suivants :
+ * <ul>
+ * <li>Un message en cas d'exceptions</li>
+ * <li>Une ArrayList<IApplicationLogListener> pour gérer les IapplicationLogListeners </li>
+ * </ul>
+ * </p>
+ * <p>
+ * On peut modifier les élèments de la AbstractApplicationLog avec certaine fonctions
+ * </p>
+ * @author DavyKui
+ */
 public abstract class AbstractApplicationLog implements IApplicationLog
 {
 	//_______________________LES VARIABLES____________________________________

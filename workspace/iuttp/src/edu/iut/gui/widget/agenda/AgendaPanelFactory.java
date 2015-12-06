@@ -9,35 +9,79 @@ import javax.swing.JPanel;
 
 import edu.iut.gui.widget.agenda.WeekPanel.WeekDayNames;
 
+
+/**
+ * <b>AgendaPanelFactory est la classe représentant les mois, jours et semaine de l'application</b>
+ * <p>
+ * Un AgendaPnaleFactory est caractérisé par les attributs suivants :
+ * <ul>
+ * <li>Un MONTH_VIEW qui gère le mois</li>
+ * <li>Un WEEK_VIEW qui gère la semaine</li>
+ * <li>Un DAY_VIEW qui gère le jour</li>
+ * </ul>
+ * </p>
+ * <p>
+ * On peut modifier les attributs de AgendaPanelFactory avec certaine fonctions
+ * </p>
+ * @author DavyKui
+ */
 public class AgendaPanelFactory 
 {
-
-	public enum ActiveView
-	{
+	//________________ATTRIBUTS DE LA CLASSE___________________
+	 /**
+     * L'ActiveView est l'attribut qui gère le mois, jour et la semaine
+     */
+	public enum ActiveView{
 		MONTH_VIEW("Month View"),
 		WEEK_VIEW("Week View"),
 		DAY_VIEW("Day View");
 		
 		private String activeView;
 		
-		ActiveView(String activeView) 
+		
+		
+		//________________METHODES DE LA CLASSE___________________
+		
+		/**
+	     * constructeur de la classe
+	     * @param activeView
+	     * 		on initialise l'activeView par celui qui est pris en paramètre
+	     */
+		ActiveView(String activeView)
 		{
 			this.activeView = activeView;
 		}
 		
+		
+		/**
+	     * fonction qui retourne l'activeView
+	     * @return activeView
+	     */
 		public String toString()
 		{
 			return activeView;
 		}		
 	}
 	
-	public AgendaPanelFactory()
-	{
+	/**
+     * constructeur de la classe
+     * 	
+     */
+	public AgendaPanelFactory() {
 	}
 	
-	public JPanel getAgendaView(ActiveView activeView) 
+	
+	/**
+     * méthode qui retourne une JPanel liée à l'engenda ActiveView
+     * @return JPanel
+     * @param activeView
+     * 		selon l'activeView pris en paramètre, 
+     * 		on initialise la panel selon le paramètre
+     */
+	public JPanel getAgendaView(ActiveView activeView)
 	{
 		JPanel agendaView = null;
+		//Selon le paramètre on initialise la panel
 		switch (activeView) {
 			case MONTH_VIEW:
 				MonthPanel monthPanel = new MonthPanel();
@@ -54,6 +98,7 @@ public class AgendaPanelFactory
 			default:
 				break;				
 		}
+		//on retourne la JPanel
 		return agendaView;
 	}
 

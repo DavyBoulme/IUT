@@ -13,7 +13,7 @@ import edu.iut.app.ApplicationWarningLog;
 import edu.iut.app.IApplicationLog;
 /**
  * 
- * @author Stéphane
+ * @author DavyKui
  *test de la clasee ApplicationInfoLog
  *test de la méthode getMesage
  *test de la méthode addListener
@@ -22,7 +22,9 @@ import edu.iut.app.IApplicationLog;
  */
 public class ApplicationLogsTest {
 
-	//Test getError()
+	/**
+     * test de la fonction getError, s'il  y a une erreur, on retourne un message
+     */
 	@Test
 	public void testgetErrors() 
 	{
@@ -45,7 +47,9 @@ public class ApplicationLogsTest {
 		
 	}
 	
-	//Test getWarning()
+	/**
+     * test de la fonction getWarning, s'il  y a une erreur, on retourne un message
+     */
 	@Test
 	public void testgetWarning() 
 	{
@@ -69,7 +73,9 @@ public class ApplicationLogsTest {
 	}
 	
 	
-	//Test getInfos()
+	/**
+     * test de la fonction getInfos, s'il  y a une erreur, on retourne un message
+     */
 	@Test
 	public void testgetInfos() 
 	{

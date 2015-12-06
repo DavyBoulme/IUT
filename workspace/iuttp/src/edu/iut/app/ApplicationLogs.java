@@ -3,6 +3,13 @@ package edu.iut.app;
 import java.util.ArrayList;
 
 
+/**
+ * <b>ApplicationLogs est la classe représentant les applicationlogs</b>
+
+ * On peut modifier les élèments de la ApplicationLogs avec certaine fonctions
+ * </p>
+ * @author DavyKui
+ */
 public class ApplicationLogs extends ArrayList<IApplicationLog>
 {
 

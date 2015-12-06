@@ -10,7 +10,7 @@ import edu.iut.app.ApplicationInfoLog;
 import edu.iut.app.IApplicationLogListener;
 /**
  * 
- * @author Stéphane
+ * @author DavyKui
  *test de la clasee ApplicationInfoLog
  *test de la méthode getMesage
  *test de la méthode addListener
@@ -19,6 +19,9 @@ import edu.iut.app.IApplicationLogListener;
  */
 public class ApplicationWarningLogTest {
 
+	/**
+     * test de la fonction getMessage, s'il  y a une erreur, on retourne un message
+     */
 	@Test
 	public void testGetMessage() 
 	{
@@ -33,6 +36,10 @@ public class ApplicationWarningLogTest {
 		fail("getMessage(), Not yet implemented");
 	}
 	
+	
+	/**
+     * test de la fonction addListener, s'il  y a une erreur, on retourne un message
+     */
 	@Test
 	public void testAddListener() 
 	{
@@ -42,6 +49,9 @@ public class ApplicationWarningLogTest {
 	}
 
 	
+	/**
+     * test de la fonction getApplicationListnener, s'il  y a une erreur, on retourne un message
+     */
 	@Test
 	public void testGetApplicationListener() 
 	{
@@ -60,6 +70,10 @@ public class ApplicationWarningLogTest {
 		}
 	}
 	
+	
+	/**
+     * test de la fonction fireMessage, s'il  y a une erreur, on retourne un message
+     */
 	@Test
 	public void testFireMessage() //et getMessage()
 	{

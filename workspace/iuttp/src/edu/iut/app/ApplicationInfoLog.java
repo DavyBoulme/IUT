@@ -1,5 +1,13 @@
 package edu.iut.app;
 
+
+/**
+ * <b>ApplicationInfoLog est la classe représentant les applicationInfologs</b>
+
+ * On peut modifier les élèments de la ApplicationInfoLog avec certaine fonctions
+ * </p>
+ * @author DavyKui
+ */
 public class ApplicationInfoLog extends AbstractApplicationLog
 {
 

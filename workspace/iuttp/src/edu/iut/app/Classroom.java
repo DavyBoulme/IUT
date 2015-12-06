@@ -1,5 +1,11 @@
 package edu.iut.app;
 
+
+/**
+ * <b>Classroom</b>
+ *Nous n'avions pas toucher à la classe
+ * @author DavyKui
+ */
 public class Classroom {
 	
 	public Classroom() {

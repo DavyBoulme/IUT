@@ -1,6 +1,13 @@
 package edu.iut.app;
 
 
+/**
+ * <b>ApplicationErrorLog est la classe représentant les applicationErrorlogs</b>
+
+ * On peut modifier les élèments de la ApplicationErrorLog avec certaine fonctions
+ * </p>
+ * @author DavyKui
+ */
 public class ApplicationErrorLog extends AbstractApplicationLog 
 {
 
